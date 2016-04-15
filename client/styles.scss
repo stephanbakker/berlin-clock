@@ -1,0 +1,82 @@
+body {
+  background: #eee;
+}
+
+h1 {
+  font-size: 18px;
+}
+
+.berlinClock {
+  width: 385px;
+}
+
+.onOffRow {
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+  margin: 5px 0;
+
+  &:first-child {
+    justify-content: center;
+
+    .onOff {
+      width: 70px;
+      height: 70px;
+      flex: 0 1 auto;
+      border-radius: 50%;
+      background-color: yellow;
+
+      &.on {
+        background-color: red;
+      }
+
+
+    }
+  }
+}
+
+.onOffRow:nth-child(5),
+.onOffRow:nth-child(4) {
+  .onOff {
+    &.on {
+      background-color: yellow;
+
+      &:nth-child(3n+0) {
+        background-color: red;
+      }
+    }
+
+    &.off {
+      background-color: #AF8E5A;
+
+      &:nth-child(3n+9) {
+        background-color: #654C4C;
+      }
+    }
+
+  }
+
+}
+
+
+.onOff {
+  flex: 1 auto;
+  display: inline-block;
+  width: 35px;
+  height: 120px;
+  margin: 0 2px;
+  border-radius: 7px;
+  border: 3px solid black;
+  background-color: grey;
+
+  &.on {
+      background-color: red;
+  }
+
+  &.off {
+      background-color: #712D2D;
+
+  }
+
+
+}
