@@ -5,6 +5,7 @@ h1 {
   font-size: 18px; }
 
 .berlinClock {
+  margin: 0 auto;
   width: 385px; }
 
 .onOffRow {
